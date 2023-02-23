@@ -1,8 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from base.Selenium_driver import seleniumDriver
+from utilities import customLogger_twoFrameworkOne as cl
+import logging
+import time
 
 class loginPageClass(seleniumDriver):
+    log = cl.CustomLogger(loggerName="classLogger", logLevel=logging.DEBUG)
+
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -44,10 +49,20 @@ class loginPageClass(seleniumDriver):
         self.getLoginButton().click()
 
 
-    def login(self, userName, password):
+    def login(self, userName="", password=""):
         self.clickSignInButton()
         self.enterEmailField(userName)
         self.enterPassField(password)
+        time.sleep(3)
         self.clickLoginButton()
 
 
+    def verifyLoginSuccessful(self):
+        result = self.isElementPresent(locatorType="CLASS_NAME", path="zl-navbar-rhs-img")
+        return result
+
+    def verifyLoginFailed(self):
+        # result = self.isElementPresent(locatorType="XPATH", path="//span[contains(text(),'Your username or password is invalid. Please try again.')]")
+        # result = self.isElementPresent(locatorType="CLASS_NAME", path="zl-navbar-rhs-img")
+        result = self.isElementPresent(locatorType="XPATH", path="//div[@class='form-group has-error']/span")
+        return result

@@ -1,0 +1,4 @@
+02/03/23 12:25:31:PM: testStatus: INFO: Screenshot save to directory: C:\Users\Cloud Analogy\PycharmProjects\Project_One\base\../screenshots/Title is not correct.1675407331570.png
+02/03/23 12:25:31:PM: testStatus: ERROR: Verification failed: Title is not correct
+02/03/23 12:25:31:PM: testStatus: INFO: Verification successful: user icon verified
+02/03/23 12:25:31:PM: testStatus: ERROR: login and title testTest Failed

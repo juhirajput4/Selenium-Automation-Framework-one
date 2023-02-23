@@ -1,0 +1,8 @@
+02/02/23 03:09:33:PM: loginPageClass: INFO: Element found with locator: //a[@href='/login'] and  locatorType: xpath
+02/02/23 03:09:34:PM: loginPageClass: INFO: Element found with locator: (//input[@id='email'])[1] and  locatorType: xpath
+02/02/23 03:09:34:PM: loginPageClass: INFO: Element found with locator: //input[@id='password'] and  locatorType: xpath
+02/02/23 03:09:37:PM: loginPageClass: INFO: Element found with locator: //button[@id='login'] and  locatorType: xpath
+02/02/23 03:09:43:PM: loginPageClass: INFO: Element found with locator: //a[@href='/login'] and  locatorType: xpath
+02/02/23 03:09:44:PM: loginPageClass: INFO: Element found with locator: (//input[@id='email'])[1] and  locatorType: xpath
+02/02/23 03:09:45:PM: loginPageClass: INFO: Element found with locator: //input[@id='password'] and  locatorType: xpath
+02/02/23 03:09:48:PM: loginPageClass: INFO: Element found with locator: //button[@id='login'] and  locatorType: xpath
